@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textSize="20sp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextId"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:hint="Age"
+        android:textSize="20sp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"
+        android:text="Create Student"
+        android:textSize="20sp"
+        android:onClick="createStudent" />
+
+    <Button
+        android:id="@+id/buttonRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCreate"
+        android:layout_marginTop="16dp"
+        android:text="Read Students"
+        android:textSize="20sp"
+        android:onClick="readStudents" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRead"
+        android:layout_marginTop="16dp"
+        android:text="Update Student"
+        android:textSize="20sp"
+        android:onClick="updateStudent" />
+
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/buttonUpdate"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
